@@ -66,17 +66,3 @@ while True:
         print("=====processing completed=====", parsed_result.get("content"))
     break
 
-# response = client.chat.completions.create(
-#     model="gemini-2.5-flash",
-#     response_format={"type": "json_object"},
-#     messages=[
-#         {"role": "system", "content": SYSTEM_PROMPT},
-#         {"role": "user", "content": "Hey, write a code to add n numbers in js"},
-#         {"role": "assistant", "content": json.dumps({"step": "PLAN", "content": "The user wants a JavaScript function to add 'n' numbers."})},
-#         {"role": "assistant", "content": json.dumps({"step": "PLAN", "content": "I need to write a JavaScript function that can accept an arbitrary number of arguments and return their sum."})},
-#         {"role": "assistant", "content": json.dumps({"step": "PLAN", "content": "I can achieve this using the rest parameter (...) to gather all arguments into an array and then use a loop or reduce method to sum them up."})}
-#     ]
-# )
-
-# print(response.choices[0].message.content)
-
